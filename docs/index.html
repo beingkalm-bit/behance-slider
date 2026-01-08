@@ -1,17 +1,36 @@
-<script>
-  window.onload = function () {
-    new juxtapose.JXSlider(
-      '#slider',
-      [
-        { src: 'https://beingkalm-bit.github.io/behance-slider/before.png' },
-        { src: 'https://beingkalm-bit.github.io/behance-slider/after.png' }
-      ],
-      {
-        animate: false,
-        showLabels: false,
-        showCredits: true,
-        startingPosition: "50%"
-      }
-    );
-  };
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before After Slider</title>
+
+  <!-- Juxtapose CSS -->
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+    .juxtapose {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="juxtapose">
+  <img src="https://beingkalm-bit.github.io/behance-slider/before.png">
+  <img src="https://beingkalm-bit.github.io/behance-slider/after.png">
+</div>
+
+<!-- Juxtapose JS -->
+<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+
+</body>
+</html>
